@@ -37,7 +37,7 @@ function ExtensionCard({ card }) {
 export default function DownloadExtension() {
   return (
     <section className="section section-download-extension">
-      <div className="section-download-extension-header">
+      <div className="section-header section-download-extension-header">
         <h2>Download the extension</h2>
         <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
       </div>

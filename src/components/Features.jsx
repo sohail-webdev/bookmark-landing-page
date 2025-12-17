@@ -76,7 +76,7 @@ function FeaturesTabs({ active_features_tab_id, set_active_features_tab_id }) {
 export default function Features({ active_features_tab_id, set_active_features_tab_id }) {
   return (
     <section className="section section-features">
-      <div className="section-features-header">
+      <div className="section-header section-features-header">
         <h1>Features</h1>
         <p>
           Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access
