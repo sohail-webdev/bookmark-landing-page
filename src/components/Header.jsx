@@ -8,13 +8,13 @@ export default function Header() {
         <nav>
           <ul className="nav-links-container">
             <li className="nav-link">
-              <a href="#">Features</a>
+              <a>Features</a>
             </li>
             <li className="nav-link">
-              <a href="#">Pricing</a>
+              <a>Pricing</a>
             </li>
             <li className="nav-link">
-              <a href="#">Contact</a>
+              <a>Contact</a>
             </li>
           </ul>
         </nav>

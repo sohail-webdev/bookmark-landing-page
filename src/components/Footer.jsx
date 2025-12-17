@@ -8,19 +8,19 @@ export default function Footer() {
         <nav>
           <ul className="nav-links-container">
             <li className="nav-link">
-              <a href="#">Features</a>
+              <a>Features</a>
             </li>
             <li className="nav-link">
-              <a href="#">Pricing</a>
+              <a>Pricing</a>
             </li>
             <li className="nav-link">
-              <a href="#">Contact</a>
+              <a>Contact</a>
             </li>
           </ul>
         </nav>
       </div>
       <div className="social-media-links-container">
-        <a href="#">
+        <a>
           <svg
             className="footer-social-media-icon"
             xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ export default function Footer() {
             />
           </svg>
         </a>
-        <a href="#">
+        <a>
           <svg
             className="footer-social-media-icon"
             xmlns="http://www.w3.org/2000/svg"
