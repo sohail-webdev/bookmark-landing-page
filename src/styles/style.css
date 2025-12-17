@@ -36,6 +36,14 @@
   font-family: inherit;
   cursor: pointer;
 }
+.text-input {
+  outline: none;
+  border: none;
+  background: none;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
 /*  */
 
 /* Defaults */
@@ -329,4 +337,48 @@ h2 {
 .faq-accordion.content-visible > .faq-accordion-content {
   max-height: 100rem;
   margin-top: 0.5rem;
+}
+
+/* Contact Section */
+.section-contact {
+  background-color: var(--color-primary-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: #ffffff;
+}
+.section-contact > p {
+  opacity: 1;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.section-contact > h2 {
+  text-align: center;
+  max-width: 24%;
+}
+.contact-us-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0.8rem;
+}
+.contact-us-container > input {
+  width: 15rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0 1rem;
+}
+.contact-us-container > input::placeholder {
+  color: var(--color-neutral-2);
+  opacity: 0.4;
+}
+.contact-us-container > .primary-cta-button {
+  background-color: var(--color-primary-2);
+  padding: var(--button-padding);
+  border-radius: 0.4rem;
+  font-weight: bold;
 }

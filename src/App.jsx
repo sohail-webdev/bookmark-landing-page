@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Features from "./components/Features";
 import DownloadExtension from "./components/DownloadExtension";
 import FAQ from "./components/FAQ";
+import Contact from "./components/Contact";
 
 function App() {
   const [activeFeaturesTabId, setActiveFeaturesTabId] = useState(1);
@@ -64,6 +65,7 @@ function App() {
         <Features active_features_tab_id={activeFeaturesTabId} set_active_features_tab_id={set_active_features_tab_id} />
         <DownloadExtension />
         <FAQ accordions={accordions} toggle_accordion={toggle_accordion} />
+        <Contact />
       </main>
     </>
   );
