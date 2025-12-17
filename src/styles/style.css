@@ -197,7 +197,7 @@ a {
 .features-tab-switcher-button {
   font-size: 1rem;
   padding: 1.5rem;
-  border-bottom: 0.15rem solid transparent;
+  border-bottom: 0.15rem solid var(--color-neutral-1);
   opacity: 0.6;
 }
 .features-tab-switcher-button.active {
