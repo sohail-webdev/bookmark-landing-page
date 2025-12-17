@@ -449,28 +449,56 @@ footer {
 
 /* Transitions */
 /* Hover */
-.nav-link:hover,
-.features-tab-switcher-button:hover,
-.faq-accordion-button:hover {
+@media (pointer: fine) {
+  .nav-link:hover,
+  .features-tab-switcher-button:hover,
+  .faq-accordion-button:hover {
+    color: var(--color-primary-2);
+  }
+  .login-button:hover,
+  .primary-cta-button:hover,
+  .secondary-cta-button:hover,
+  .secondary-button:hover {
+    background-color: #ffffff;
+  }
+  .secondary-button:hover {
+    color: var(--color-primary-2);
+    border-color: var(--color-primary-2);
+  }
+  .primary-cta-button:hover {
+    color: var(--color-primary-1);
+    border-color: var(--color-primary-1);
+  }
+  .secondary-cta-button:hover {
+    border-color: var(--color-neutral-2);
+  }
+  .footer-social-media-icon:hover path {
+    fill: var(--color-primary-2);
+  }
+}
+
+.nav-link:active,
+.features-tab-switcher-button:active,
+.faq-accordion-button:active {
   color: var(--color-primary-2);
 }
-.login-button:hover,
-.primary-cta-button:hover,
-.secondary-cta-button:hover,
-.secondary-button:hover {
+.login-button:active,
+.primary-cta-button:active,
+.secondary-cta-button:active,
+.secondary-button:active {
   background-color: #ffffff;
 }
-.secondary-button:hover {
+.secondary-button:active {
   color: var(--color-primary-2);
   border-color: var(--color-primary-2);
 }
-.primary-cta-button:hover {
+.primary-cta-button:active {
   color: var(--color-primary-1);
   border-color: var(--color-primary-1);
 }
-.secondary-cta-button:hover {
+.secondary-cta-button:active {
   border-color: var(--color-neutral-2);
 }
-.footer-social-media-icon:hover path {
+.footer-social-media-icon:active path {
   fill: var(--color-primary-2);
 }
