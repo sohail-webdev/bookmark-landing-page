@@ -176,6 +176,7 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 100%;
 }
 .features-tab-switcher-container {
   display: flex;
@@ -208,10 +209,11 @@ h2 {
 .features-tabs-wrapper::before {
   position: absolute;
   left: -1%;
-  bottom: 0;
+  top: 0;
+  transform: translateY(6rem);
   content: "";
   height: 20rem;
-  --background-overlay-width: 40vw;
+  --background-overlay-width: 42vw;
   width: var(--background-overlay-width);
   --border-radius: var(--background-overlay-width);
   border-top-right-radius: var(--border-radius);
@@ -223,6 +225,7 @@ h2 {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  height: 25rem;
 }
 .features-tab-content {
   display: flex;
