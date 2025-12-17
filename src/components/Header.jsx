@@ -7,9 +7,9 @@ export default function Header() {
       <div className="nav-links-cta-container">
         <nav>
           <ul className="nav-links-container">
-            <li className="nav-link">Features</li>
-            <li className="nav-link">Pricing</li>
-            <li className="nav-link">Contact</li>
+            <li className="nav-link"><a href="#">Features</a></li>
+            <li className="nav-link"><a href="#">Pricing</a></li>
+            <li className="nav-link"><a href="#">Contact</a></li>
           </ul>
         </nav>
         <button className="button login-button">Login</button>
