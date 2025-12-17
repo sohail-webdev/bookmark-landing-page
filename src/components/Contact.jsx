@@ -5,7 +5,7 @@ export default function Contact() {
       <h2>Stay up-to-date with what we’re doing</h2>
       <div className="contact-us-container">
         <input type="email" name="email" placeholder="Enter your email address" className="text-input" />
-        <button className="button primary-cta-button">Contact Us</button>
+        <button className="button secondary-button">Contact Us</button>
       </div>
     </section>
   );

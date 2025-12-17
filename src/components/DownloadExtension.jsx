@@ -29,7 +29,7 @@ function ExtensionCard({ card }) {
       <p className="extension-card-cta-text">Add to {name}</p>
       <p className="extension-card-minimum-version">Minimum version {minimum_version}</p>
       <img src={extension_card_separator_image} alt="" className="extension-card-separator-icon" />
-      <button className="button primary-cta-button">Add & Install Extension</button>
+      <button className="button primary-button">Add & Install Extension</button>
     </div>
   );
 }

@@ -25,7 +25,7 @@ export default function FAQ({ accordions, toggle_accordion }) {
           <Accordion key={accordion.id} accordion={accordion} toggle_accordion={toggle_accordion} />
         ))}
       </div>
-      <button className="button primary-cta-button">More Info</button>
+      <button className="button primary-button">More Info</button>
     </section>
   );
 }

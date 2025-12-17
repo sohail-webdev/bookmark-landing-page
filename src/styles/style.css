@@ -93,14 +93,13 @@ h2 {
 .nav-link {
   cursor: pointer;
 }
-.nav-link > a{
+.nav-link > a {
   color: inherit;
   text-decoration: none;
 }
 .login-button {
-  color: #ffffff;
-  background-color: var(--color-primary-2);
   padding: 0.8rem 1.4rem;
+  border: 0.15rem solid transparent;
   border-radius: 0.4rem;
 }
 .nav-link,
@@ -158,14 +157,22 @@ h2 {
   border-radius: var(--button-radius);
   font-weight: bold;
 }
-.primary-cta-button {
+.primary-cta-button,
+.primary-button {
   background-color: var(--color-primary-1);
   color: #ffffff;
+  border: 0.15rem solid transparent;
 }
-.secondary-cta-button {
+.secondary-cta-button,
+.secondary-button {
   background-color: var(--color-neutral-1);
   color: #000000;
   box-shadow: 0.1rem 0.1rem 0.4rem 0.05rem rgb(37, 43, 70, 0.2);
+  border: 0.15rem solid transparent;
+}
+.secondary-button {
+  color: #ffffff;
+  background-color: var(--color-primary-2);
 }
 
 /* Features Section */
@@ -295,7 +302,7 @@ h2 {
 .extension-card > .extension-card-separator-icon {
   width: 100%;
 }
-.extension-card > .primary-cta-button {
+.extension-card > .primary-button {
   padding: var(--button-padding);
   border-radius: 0.4rem;
   font-weight: bold;
@@ -332,7 +339,7 @@ h2 {
   padding: 1rem;
   padding-left: 0;
 }
-.section-faq > .primary-cta-button {
+.section-faq > .primary-button {
   padding: var(--button-padding);
   font-weight: bold;
   border-radius: 0.4rem;
@@ -384,10 +391,10 @@ h2 {
   color: var(--color-neutral-2);
   opacity: 0.4;
 }
-.contact-us-container > .primary-cta-button {
-  background-color: var(--color-primary-2);
+.contact-us-container > .secondary-button {
   padding: var(--button-padding);
   border-radius: 0.4rem;
+  border: 0.15rem solid transparent;
   font-weight: bold;
 }
 footer {
@@ -410,4 +417,32 @@ footer {
 }
 .footer-social-media-icon {
   height: 2rem;
+}
+
+/* Transitions */
+/* Active */
+.nav-link:active,
+.features-tab-switcher-button:active,
+.faq-accordion-button:active {
+  color: var(--color-primary-2);
+}
+.login-button:active,
+.primary-cta-button:active,
+.secondary-cta-button:active,
+.secondary-button:active {
+  background-color: #ffffff;
+}
+.secondary-button:active {
+  color: var(--color-primary-2);
+  border-color: var(--color-primary-2);
+}
+.primary-cta-button:active {
+  color: var(--color-primary-1);
+  border-color: var(--color-primary-1);
+}
+.secondary-cta-button:active {
+  border-color: var(--color-neutral-2);
+}
+.footer-social-media-icon:active {
+  fill: var(--color-primary-2);
 }

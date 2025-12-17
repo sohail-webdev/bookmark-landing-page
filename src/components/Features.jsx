@@ -34,7 +34,7 @@ function FeaturesTab({ tab }) {
       <div className="features-tab-content">
         <h2>{heading}</h2>
         <p>{paragraph}</p>
-        <button className="button primary-cta-button">More Info</button>
+        <button className="button primary-button">More Info</button>
       </div>
     </div>
   );
