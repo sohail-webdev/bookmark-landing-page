@@ -284,3 +284,49 @@ h2 {
   border-radius: 0.4rem;
   font-weight: bold;
 }
+
+/* FAQ Section */
+.section-faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.faq-accordions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 30%;
+}
+.faq-accordion {
+  border: 0.2rem solid var(--color-neutral-1);
+  border-left: 0;
+  border-right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.faq-accordion-button {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  padding-left: 0;
+}
+.section-faq > .primary-cta-button {
+  padding: var(--button-padding);
+  font-weight: bold;
+  border-radius: 0.4rem;
+}
+.faq-accordion-content {
+  max-height: 0;
+  margin-top: 0;
+  overflow: hidden;
+}
+.faq-accordion.content-visible > .faq-accordion-content {
+  max-height: 100rem;
+  margin-top: 0.5rem;
+}
