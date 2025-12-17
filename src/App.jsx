@@ -2,6 +2,7 @@ import { useState, useCallback } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
+import DownloadExtension from "./components/DownloadExtension";
 
 function App() {
   const [activeFeaturesTabId, setActiveFeaturesTabId] = useState(1);
@@ -17,6 +18,7 @@ function App() {
       <main>
         <Hero />
         <Features active_features_tab_id={activeFeaturesTabId} set_active_features_tab_id={set_active_features_tab_id} />
+        <DownloadExtension />
       </main>
     </>
   );

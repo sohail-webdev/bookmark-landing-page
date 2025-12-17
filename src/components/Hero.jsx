@@ -2,7 +2,7 @@ import illustration_hero from "../assets/illustration-hero.svg";
 
 export default function Hero() {
   return (
-    <section className="section-hero">
+    <section className="section section-hero">
       <div className="section-hero-content">
         <h1>A Simple Bookmark Manager</h1>
         <p>

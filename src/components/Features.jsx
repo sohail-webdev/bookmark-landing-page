@@ -75,7 +75,7 @@ function FeaturesTabs({ active_features_tab_id, set_active_features_tab_id }) {
 
 export default function Features({ active_features_tab_id, set_active_features_tab_id }) {
   return (
-    <section className="section-features">
+    <section className="section section-features">
       <div className="section-features-header">
         <h1>Features</h1>
         <p>
