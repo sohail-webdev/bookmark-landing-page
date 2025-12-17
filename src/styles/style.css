@@ -9,8 +9,8 @@
   min-height: 100vh;
   min-height: 100dvh;
   width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
   --x-padding: 10vw;
 }
 /* Resets */
@@ -41,11 +41,77 @@
   gap: 2.4rem;
 }
 .nav-link {
-  color: hsl(223, 31%, 21%);
+  color: hsl(229, 31%, 21%);
 }
 .login-button {
   color: #ffffff;
   background-color: hsl(0, 94%, 66%);
   padding: 0.8rem 1.4rem;
   border-radius: 0.4rem;
+}
+.nav-link,
+.login-button {
+  text-transform: uppercase;
+}
+
+/* Hero Section */
+.section-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vh 0;
+}
+.section-hero > * {
+  flex: 1;
+}
+.section-hero-content {
+  padding-left: var(--x-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section-hero-illustration-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding-right: var(--x-padding);
+}
+.section-hero-illustration-wrapper::before {
+  position: absolute;
+  right: -1%;
+  bottom: 0;
+  content: "";
+  height: 20rem;
+  width: 40vw;
+  --border-radius: 40vw;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  background-color: hsl(231, 69%, 60%);
+  z-index: -1;
+}
+.section-hero-content > h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+.section-hero-content > p {
+  font-size: 1.2rem;
+  opacity: 0.5;
+  max-width: 90%;
+}
+.section-hero-cta-buttons {
+  display: flex;
+  gap: 1rem;
+}
+.section-hero-cta-buttons > .button {
+  padding: 0.8rem 1.4rem;
+  border-radius: 0.4rem;
+  font-weight: bold;
+}
+.primary-cta-button {
+  background-color: hsl(231, 69%, 60%);
+  color: #ffffff;
+}
+.secondary-cta-button {
+  background-color: hsl(0, 0%, 97%);
+  color: #000000;
+  box-shadow: 0.1rem 0.1rem 0.4rem 0.05rem rgb(37, 43, 70, 0.2);
 }
