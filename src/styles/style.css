@@ -354,6 +354,12 @@ a {
   max-height: 100rem;
   margin-top: 0.5rem;
 }
+.faq-accordion.content-visible .faq-accordion-arrow-icon {
+  transform: rotate(180deg);
+}
+.faq-accordion.content-visible .faq-accordion-arrow-icon > path {
+  stroke: var(--color-primary-2);
+}
 
 /* Contact Section */
 .section-contact {

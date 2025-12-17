@@ -1,12 +1,12 @@
-import faq_arrow_icon from "../assets/icon-arrow.svg";
-
 function Accordion({ accordion, toggle_accordion }) {
   const { title, content } = accordion;
   return (
     <div className={`faq-accordion${accordion.is_content_visible ? " content-visible" : ""}`}>
       <button className="button faq-accordion-button" data-id={accordion.id} onClick={toggle_accordion}>
         {title}
-        <img src={faq_arrow_icon} alt="" className="faq-accordion-arrow-icon" />
+        <svg className="faq-accordion-arrow-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+          <path fill="none" stroke="#5267DF" strokeWidth="3" d="M1 1l8 8 8-8" />
+        </svg>
       </button>
       <p className="faq-accordion-content">{content}</p>
     </div>
