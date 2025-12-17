@@ -302,7 +302,7 @@ a {
 .extension-card > .extension-card-separator-icon {
   width: 100%;
 }
-.extension-card > .primary-button {
+.extension-card > .primary-cta-button {
   padding: var(--button-padding);
   border-radius: 0.4rem;
   font-weight: bold;
