@@ -5,6 +5,7 @@ import Features from "./components/Features";
 import DownloadExtension from "./components/DownloadExtension";
 import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   const [activeFeaturesTabId, setActiveFeaturesTabId] = useState(1);
@@ -67,6 +68,7 @@ function App() {
         <FAQ accordions={accordions} toggle_accordion={toggle_accordion} />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 }

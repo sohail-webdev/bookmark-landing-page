@@ -382,3 +382,24 @@ h2 {
   border-radius: 0.4rem;
   font-weight: bold;
 }
+footer {
+  background-color: var(--color-neutral-2);
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem var(--x-padding);
+}
+.logo-nav-links-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+}
+.social-media-links-container {
+  display: flex;
+  gap: 2rem;
+}
+.footer-social-media-icon {
+  height: 2rem;
+}
