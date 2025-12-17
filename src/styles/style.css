@@ -71,6 +71,9 @@ h2 {
   max-width: 35%;
   text-align: center;
 }
+a {
+  cursor: pointer;
+}
 /*  */
 
 .header {
@@ -89,9 +92,6 @@ h2 {
   display: flex;
   align-items: center;
   gap: 2.4rem;
-}
-.nav-link {
-  cursor: pointer;
 }
 .nav-link > a {
   color: inherit;
