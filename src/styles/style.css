@@ -443,6 +443,6 @@ footer {
 .secondary-cta-button:active {
   border-color: var(--color-neutral-2);
 }
-.footer-social-media-icon:active {
+.footer-social-media-icon:active path {
   fill: var(--color-primary-2);
 }
