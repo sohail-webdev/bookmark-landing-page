@@ -73,6 +73,7 @@ h2 {
 }
 a {
   cursor: pointer;
+  user-select: none;
 }
 /*  */
 
