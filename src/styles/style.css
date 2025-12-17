@@ -22,6 +22,7 @@
   font-size: inherit;
   font-weight: inherit;
   font-family: inherit;
+  cursor: pointer;
 }
 .header {
   display: flex;
@@ -42,6 +43,7 @@
 }
 .nav-link {
   color: hsl(229, 31%, 21%);
+  cursor: pointer;
 }
 .login-button {
   color: #ffffff;
