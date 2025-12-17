@@ -442,29 +442,29 @@ footer {
 }
 
 /* Transitions */
-/* Active */
-.nav-link:active,
-.features-tab-switcher-button:active,
-.faq-accordion-button:active {
+/* Hover */
+.nav-link:hover,
+.features-tab-switcher-button:hover,
+.faq-accordion-button:hover {
   color: var(--color-primary-2);
 }
-.login-button:active,
-.primary-cta-button:active,
-.secondary-cta-button:active,
-.secondary-button:active {
+.login-button:hover,
+.primary-cta-button:hover,
+.secondary-cta-button:hover,
+.secondary-button:hover {
   background-color: #ffffff;
 }
-.secondary-button:active {
+.secondary-button:hover {
   color: var(--color-primary-2);
   border-color: var(--color-primary-2);
 }
-.primary-cta-button:active {
+.primary-cta-button:hover {
   color: var(--color-primary-1);
   border-color: var(--color-primary-1);
 }
-.secondary-cta-button:active {
+.secondary-cta-button:hover {
   border-color: var(--color-neutral-2);
 }
-.footer-social-media-icon:active path {
+.footer-social-media-icon:hover path {
   fill: var(--color-primary-2);
 }
