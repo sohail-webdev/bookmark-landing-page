@@ -6,6 +6,7 @@ import DownloadExtension from "./components/DownloadExtension";
 import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import MobileNavBar from "./components/MobileNavBar";
 
 function App() {
   const [activeFeaturesTabId, setActiveFeaturesTabId] = useState(1);
@@ -69,6 +70,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <MobileNavBar />
     </>
   );
 }
