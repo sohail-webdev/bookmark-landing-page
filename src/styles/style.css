@@ -655,7 +655,7 @@ footer {
 .mobile-navbar-container .social-media-links-container .footer-social-media-icon {
   height: 2.4rem;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   /* Defaults */
   .section-header > * {
     max-width: 80%;
