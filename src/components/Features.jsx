@@ -27,7 +27,7 @@ const features_tab_contents = [
 function FeaturesTab({ tab }) {
   const { heading, paragraph, image } = tab;
   return (
-    <div className="features-tab-simple-bookmarking">
+    <div className="features-tab">
       <div className="features-tab-illustration-wrapper">
         <img src={image} alt="" className="features-tab-illustration" />
       </div>

@@ -216,12 +216,12 @@ a {
 .features-tab-switcher-button.active > .features-tab-switcher-button-text {
   border-color: var(--color-primary-2);
 }
-.features-tab-simple-bookmarking {
+.features-tab {
   display: flex;
   height: 50vh;
   gap: 5rem;
 }
-.features-tab-simple-bookmarking > * {
+.features-tab > * {
   width: 50%;
 }
 .features-tabs-wrapper {
