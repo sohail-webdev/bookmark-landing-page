@@ -577,8 +577,13 @@ footer {
   #root {
     --paragraph-font-size: 1.2rem;
     --heading-font-size: 2rem;
+    --y-section-padding: 10vh;
   }
   /*  */
+  .header {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
   .nav-links-cta-container > nav,
   .nav-links-cta-container > button {
     display: none;
@@ -590,7 +595,7 @@ footer {
   .section-hero-illustration-wrapper {
     height: 10vh;
     width: 100%;
-    padding: unset;
+    padding: 0 2rem;
   }
   .section-hero-illustration-wrapper::before {
     height: 12rem;
@@ -620,5 +625,31 @@ footer {
   }
   .features-tab-switcher-button {
     width: 100%;
+  }
+  .section-features-tabs-container {
+    gap: unset;
+  }
+  .features-tab {
+    flex-direction: column;
+  }
+  .features-tab-illustration-wrapper {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .features-tab-illustration {
+    height: 20rem;
+  }
+  .features-tabs-wrapper::before {
+    height: 15rem;
+    width: 80vw;
+  }
+  .features-tab-content {
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: var(--y-section-padding);
+  }
+  .primary-button {
+    display: none;
   }
 }
