@@ -46,27 +46,33 @@ function FeaturesTabs({ active_features_tab_id, set_active_features_tab_id }) {
   return (
     <div className="section-features-tabs-container">
       <div className="features-tab-switcher-container">
-        <button
-          className={`button features-tab-switcher-button${active_features_tab_id === 1 ? " active" : ""}`}
-          data-tab-id="1"
-          onClick={set_active_features_tab_id}
-        >
-          Simple Bookmarking
-        </button>
-        <button
-          className={`button features-tab-switcher-button${active_features_tab_id === 2 ? " active" : ""}`}
-          data-tab-id="2"
-          onClick={set_active_features_tab_id}
-        >
-          Speedy Searching
-        </button>
-        <button
-          className={`button features-tab-switcher-button${active_features_tab_id === 3 ? " active" : ""}`}
-          data-tab-id="3"
-          onClick={set_active_features_tab_id}
-        >
-          Easy Sharing
-        </button>
+        <div className="features-tab-switcher-button-wrapper">
+          <button
+            className={`button features-tab-switcher-button${active_features_tab_id === 1 ? " active" : ""}`}
+            data-tab-id="1"
+            onClick={set_active_features_tab_id}
+          >
+            <div className="features-tab-switcher-button-text">Simple Bookmarking</div>
+          </button>
+        </div>
+        <div className="features-tab-switcher-button-wrapper">
+          <button
+            className={`button features-tab-switcher-button${active_features_tab_id === 2 ? " active" : ""}`}
+            data-tab-id="2"
+            onClick={set_active_features_tab_id}
+          >
+            <div className="features-tab-switcher-button-text">Speedy Searching</div>
+          </button>
+        </div>
+        <div className="features-tab-switcher-button-wrapper">
+          <button
+            className={`button features-tab-switcher-button${active_features_tab_id === 3 ? " active" : ""}`}
+            data-tab-id="3"
+            onClick={set_active_features_tab_id}
+          >
+            <div className="features-tab-switcher-button-text">Easy Sharing</div>
+          </button>
+        </div>
       </div>
       <div className="features-tabs-wrapper">{tab ? <FeaturesTab tab={tab} /> : <h2>Invalid Tab Selected</h2>}</div>
     </div>

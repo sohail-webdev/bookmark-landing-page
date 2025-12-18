@@ -1,4 +1,5 @@
 import bookmark_logo from "../assets/logo-bookmark.svg";
+import hanburger_icon from "../assets/icon-hamburger.svg";
 
 export default function Header() {
   return (
@@ -18,6 +19,7 @@ export default function Header() {
             </li>
           </ul>
         </nav>
+        <img src={hanburger_icon} alt="" />
         <button className="button login-button secondary-button">Login</button>
       </div>
     </header>
