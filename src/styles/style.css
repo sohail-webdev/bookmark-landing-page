@@ -15,12 +15,13 @@
   --color-neutral-1: hsl(0, 0%, 90%);
   --color-neutral-2: hsl(229, 31%, 21%);
   --x-padding: 10vw;
-  --y-section-padding: 5vh;
+  --y-section-padding: 10vh;
   --heading-font-size: 1.5rem;
   --paragraph-font-size: 1rem;
   --paragraph-opacity: 0.5;
   --button-padding: 0.8rem 1.4rem;
   --button-radius: 0.4rem;
+  --primary-box-shadow: 0 0.3rem 1rem 0 rgba(83, 104, 223, 0.2);
   color: var(--color-neutral-2);
 }
 
@@ -81,6 +82,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: var(--y-section-padding) var(--x-padding);
+  padding-top: 5vh;
 }
 .nav-links-cta-container {
   display: flex;
@@ -98,7 +100,7 @@ a {
   text-decoration: none;
 }
 .login-button {
-  padding: 0.8rem 1.4rem;
+  padding: 0.8rem 1.6rem;
   border: 0.15rem solid transparent;
   border-radius: 0.4rem;
 }
@@ -106,6 +108,7 @@ a {
 .login-button {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  font-size: 0.8rem;
 }
 
 /* Hero Section */
@@ -113,6 +116,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 4rem;
 }
 .section-hero > * {
   flex: 1;
@@ -127,19 +131,23 @@ a {
   position: relative;
   overflow: hidden;
   padding-right: var(--x-padding);
+  padding-left: 10rem;
 }
 .section-hero-illustration-wrapper::before {
   position: absolute;
   right: -1%;
   bottom: 0;
   content: "";
-  height: 20rem;
+  height: 16rem;
   width: 40vw;
   --border-radius: 40vw;
   border-top-left-radius: var(--border-radius);
   border-bottom-left-radius: var(--border-radius);
   background-color: var(--color-primary-1);
   z-index: -1;
+}
+.section-hero-illustration {
+  width: 110%;
 }
 .section-hero-content > h1 {
   font-size: 3rem;
@@ -166,8 +174,8 @@ a {
 .secondary-cta-button,
 .secondary-button {
   background-color: var(--color-neutral-1);
-  color: #000000;
-  box-shadow: 0.1rem 0.1rem 0.4rem 0.05rem rgb(37, 43, 70, 0.2);
+  color: var(--color-neutral-2);
+  box-shadow: var(--primary-box-shadow);
   border: 0.15rem solid transparent;
 }
 .secondary-button {
@@ -218,7 +226,7 @@ a {
 }
 .features-tab {
   display: flex;
-  height: 50vh;
+  height: 40vh;
   gap: 5rem;
 }
 .features-tab > * {
@@ -227,15 +235,15 @@ a {
 .features-tabs-wrapper {
   position: relative;
   padding: 0 var(--x-padding);
-  padding-bottom: 2.5rem;
+  padding-bottom: 3.5rem;
+  margin-bottom: 4rem;
 }
 .features-tabs-wrapper::before {
   position: absolute;
   left: -1%;
-  top: 0;
-  transform: translateY(6rem);
+  bottom: -10%;
   content: "";
-  height: 20rem;
+  height: 16rem;
   --background-overlay-width: 42vw;
   width: var(--background-overlay-width);
   --border-radius: var(--background-overlay-width);
@@ -248,7 +256,7 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 25rem;
+  height: 20rem;
 }
 .features-tab-content {
   display: flex;
@@ -288,21 +296,30 @@ a {
 }
 .extension-card {
   width: fit-content;
-  height: 19rem;
-  width: 15rem;
-  box-shadow: 0.1rem 0.1rem 0.6rem 0.05rem rgb(37, 43, 70, 0.1);
+  height: 24rem;
+  box-shadow: var(--primary-box-shadow);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem;
   border-radius: 0.4rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+.extension-card > *:not(.extension-card-logo, .extension-card-separator-icon) {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .extension-card:first-child {
   transform: translateY(-10%);
 }
 .extension-card:last-child {
   transform: translateY(10%);
+}
+.extension-card > .primary-cta-button {
+  width: 80%;
+  white-space: nowrap;
 }
 .extension-card > .extension-card-cta-text {
   font-weight: bold;
@@ -335,13 +352,13 @@ a {
   width: 30%;
 }
 .faq-accordion {
-  border-bottom: 0.2rem solid var(--color-neutral-1);
+  border-bottom: 0.15rem solid var(--color-neutral-1);
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 .faq-accordion:first-child {
-  border-top: 0.2rem solid var(--color-neutral-1);
+  border-top: 0.15rem solid var(--color-neutral-1);
 }
 .faq-accordion-button {
   font-size: 1.2rem;
@@ -491,10 +508,12 @@ footer {
   transition: color 0.25s ease, border-color 0.25s ease;
 }
 .primary-cta-button,
-.primary-button,
 .secondary-cta-button,
 .secondary-button {
   transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+.primary-button {
+  transition: filter 0.25s ease;
 }
 .email-input-wrapper {
   transition: background-color 0.25s ease;
@@ -526,6 +545,9 @@ footer {
   .secondary-button:hover {
     background-color: #ffffff;
   }
+  .primary-button:hover {
+    filter: brightness(110%);
+  }
   .secondary-button:hover {
     color: var(--color-primary-2);
     border-color: var(--color-primary-2);
@@ -552,6 +574,9 @@ footer {
 .secondary-cta-button:active,
 .secondary-button:active {
   background-color: #ffffff;
+}
+.primary-button:active {
+  filter: brightness(120%);
 }
 .secondary-button:active {
   color: var(--color-primary-2);
@@ -740,10 +765,11 @@ footer {
     width: 80%;
     height: fit-content;
     gap: 1.8rem;
-    padding: 2rem;
+    padding: 2rem 0;
   }
-  .extension-card .primary-cta-button {
-    width: 100%;
+  .extension-card > *:not(.extension-card-logo, .extension-card-separator-icon) {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .extension-card > .extension-card-minimum-version {
     font-size: 1rem;
