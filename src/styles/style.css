@@ -680,6 +680,14 @@ footer {
     transform: translateY(0%);
     pointer-events: all;
   }
+  body:has(.mobile-navbar-container.visible) {
+    overflow: hidden;
+  }
+  #root:has(.mobile-navbar-container.visible) > .header > img,
+  #root:has(.mobile-navbar-container.visible) > .header > .toggle-navbar-button {
+    opacity: 0;
+    pointer-events: none;
+  }
   .header {
     padding-top: 5vh;
     padding-bottom: 5vh;
