@@ -3,7 +3,7 @@ function Accordion({ accordion, toggle_accordion }) {
   return (
     <div className={`faq-accordion${accordion.is_content_visible ? " content-visible" : ""}`}>
       <button className="button faq-accordion-button" data-id={accordion.id} onClick={toggle_accordion}>
-        {title}
+        <p className="faq-accordion-button-text">{title}</p>
         <svg className="faq-accordion-arrow-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="12">
           <path fill="none" stroke="#5267DF" strokeWidth="3" d="M1 1l8 8 8-8" />
         </svg>

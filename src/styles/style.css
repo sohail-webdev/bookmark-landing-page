@@ -335,12 +335,13 @@ a {
   width: 30%;
 }
 .faq-accordion {
-  border: 0.2rem solid var(--color-neutral-1);
-  border-left: 0;
-  border-right: 0;
+  border-bottom: 0.2rem solid var(--color-neutral-1);
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+.faq-accordion:first-child {
+  border-top: 0.2rem solid var(--color-neutral-1);
 }
 .faq-accordion-button {
   font-size: 1.2rem;
@@ -350,6 +351,10 @@ a {
   width: 100%;
   padding: 1rem;
   padding-left: 0;
+}
+.faq-accordion-button-text {
+  opacity: 1;
+  pointer-events: none;
 }
 .section-faq > .primary-button {
   padding: var(--button-padding);
@@ -363,7 +368,7 @@ a {
 }
 .faq-accordion.content-visible > .faq-accordion-content {
   max-height: 100rem;
-  margin-top: 0.5rem;
+  margin: 1rem;
 }
 .faq-accordion.content-visible .faq-accordion-arrow-icon {
   transform: rotate(180deg);
@@ -475,7 +480,7 @@ footer {
 
 /* Transitions */
 .nav-link,
-.faq-accordion-button {
+.faq-accordion-button-text {
   transition: color 0.25s ease;
 }
 .features-tab-switcher-button-text {
@@ -508,7 +513,7 @@ footer {
 @media (pointer: fine) {
   .nav-link:hover,
   .features-tab-switcher-button:hover,
-  .faq-accordion-button:hover {
+  .faq-accordion-button-text:hover {
     color: var(--color-primary-2);
   }
   .login-button:hover,
@@ -535,7 +540,7 @@ footer {
 
 .nav-link:active,
 .features-tab-switcher-button:active,
-.faq-accordion-button:active {
+.faq-accordion-button-text:active {
   color: var(--color-primary-2);
 }
 .login-button:active,
@@ -562,6 +567,9 @@ footer {
 /* Mobile UI */
 @media (max-width: 576px) {
   /* Defaults */
+  .section-header > * {
+    max-width: 80%;
+  }
   .section-header > p {
     max-width: 80%;
   }
@@ -666,5 +674,11 @@ footer {
   }
   .extension-card > .extension-card-minimum-version {
     font-size: 1rem;
+  }
+  .faq-accordions-container {
+    width: 80%;
+  }
+  .faq-accordion-content {
+    text-align: start;
   }
 }
