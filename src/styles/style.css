@@ -448,6 +448,35 @@ footer {
 }
 
 /* Transitions */
+.nav-link,
+.faq-accordion-button {
+  transition: color 0.25s ease;
+}
+.features-tab-switcher-button {
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+.primary-cta-button,
+.primary-button,
+.secondary-cta-button,
+.secondary-button {
+  transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+.email-input-wrapper {
+  transition: background-color 0.25s ease;
+}
+.email-input-wrapper > p {
+  transition: opacity 0.25s ease;
+}
+.footer-social-media-icon path {
+  transition: fill 0.25s ease;
+}
+.faq-accordion-arrow-icon {
+  transition: transform 0.25s ease;
+}
+.faq-accordion-arrow-icon path {
+  transition: stroke 0.25s ease;
+}
+
 /* Hover */
 @media (pointer: fine) {
   .nav-link:hover,
