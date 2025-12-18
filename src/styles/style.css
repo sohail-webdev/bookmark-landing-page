@@ -569,6 +569,9 @@ footer {
 }
 
 /* Mobile UI */
+.toggle-navbar-button{
+  display: none;
+}
 @media (max-width: 576px) {
   /* Defaults */
   .section-header > * {
@@ -595,6 +598,9 @@ footer {
   .header {
     padding-top: 5vh;
     padding-bottom: 5vh;
+  }
+  .toggle-navbar-button{
+    display: block;
   }
   .nav-links-cta-container > nav,
   .nav-links-cta-container > button {

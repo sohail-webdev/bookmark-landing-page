@@ -19,9 +19,11 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <img src={hanburger_icon} alt="" />
         <button className="button login-button secondary-button">Login</button>
       </div>
+      <button className="button toggle-navbar-button">
+        <img src={hanburger_icon} alt="" />
+      </button>
     </header>
   );
 }
