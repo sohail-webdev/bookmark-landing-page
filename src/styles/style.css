@@ -503,6 +503,12 @@ footer {
 }
 
 /* Transitions */
+.mobile-navbar-container {
+  transition: opacity 0.25s ease;
+}
+.mobile-navbar-container > * {
+  transition: transform 0.25s ease;
+}
 .nav-link,
 .faq-accordion-button-text {
   transition: color 0.25s ease;
@@ -613,9 +619,11 @@ footer {
   justify-content: space-between;
   align-items: stretch;
   color: white;
-  transform: translateY(-5%);
   opacity: 0;
   pointer-events: none;
+}
+.mobile-navbar-container > * {
+  transform: translateY(-5%);
 }
 .mobile-navbar-logo-close-button-wrapper {
   display: flex;
@@ -683,8 +691,10 @@ footer {
   /*  */
   .mobile-navbar-container.visible {
     opacity: 1;
-    transform: translateY(0%);
     pointer-events: all;
+  }
+  .mobile-navbar-container.visible > * {
+    transform: translateY(0%);
   }
   body:has(.mobile-navbar-container.visible) {
     overflow: hidden;
