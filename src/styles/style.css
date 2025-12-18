@@ -390,6 +390,9 @@ a {
   max-height: 100rem;
   margin: 1rem;
 }
+.faq-accordion-arrow-icon {
+  pointer-events: none;
+}
 .faq-accordion.content-visible .faq-accordion-arrow-icon {
   transform: rotate(180deg);
 }
