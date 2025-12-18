@@ -652,4 +652,19 @@ footer {
   .primary-button {
     display: none;
   }
+  .section-download-extension-cards-container {
+    flex-direction: column;
+  }
+  .extension-card {
+    width: 80%;
+    height: fit-content;
+    gap: 1.8rem;
+    padding: 2rem;
+  }
+  .extension-card .primary-cta-button {
+    width: 100%;
+  }
+  .extension-card > .extension-card-minimum-version {
+    font-size: 1rem;
+  }
 }
