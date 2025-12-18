@@ -404,18 +404,33 @@ a {
 .contact-us-container > .email-input-wrapper:has(.text-input.invalid) > p {
   opacity: 1;
 }
-.contact-us-container > .email-input-wrapper > input {
+.contact-us-container > .email-input-wrapper > .input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.contact-us-container > .email-input-wrapper > .input-wrapper > input {
   width: 15rem;
   border-radius: 0.2rem;
   font-size: 0.8rem;
   background-color: #ffffff;
   color: #000000;
-  padding: 0 1rem;
+  padding-left: 1rem;
+  padding-right: 2.2rem;
   height: 2.4rem;
 }
-.contact-us-container > .email-input-wrapper > input::placeholder {
+.contact-us-container > .email-input-wrapper > .input-wrapper > input::placeholder {
   color: var(--color-neutral-2);
   opacity: 0.4;
+}
+.contact-us-container > .email-input-wrapper > .input-wrapper > img {
+  position: absolute;
+  right: 0;
+  padding-right: 0.5rem;
+  opacity: 0;
+}
+.contact-us-container > .email-input-wrapper:has(.text-input.invalid) > .input-wrapper > img {
+  opacity: 1;
 }
 .contact-us-container > .secondary-button {
   margin-top: 0.2rem;
@@ -464,7 +479,8 @@ footer {
 .email-input-wrapper {
   transition: background-color 0.25s ease;
 }
-.email-input-wrapper > p {
+.email-input-wrapper > p,
+.contact-us-container > .email-input-wrapper > .input-wrapper > img {
   transition: opacity 0.25s ease;
 }
 .footer-social-media-icon path {
