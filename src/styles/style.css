@@ -433,6 +433,7 @@ a {
   font-size: 0.9rem;
   align-self: flex-start;
   padding: 0.2rem;
+  font-style: italic;
 }
 .contact-us-container > .email-input-wrapper:has(.text-input.invalid) {
   background-color: var(--color-primary-2);
@@ -675,6 +676,7 @@ footer {
     --paragraph-font-size: 1.2rem;
     --heading-font-size: 2rem;
     --y-section-padding: 10vh;
+    --button-padding: 1.4rem;
   }
   /*  */
   .mobile-navbar-container.visible {
@@ -743,7 +745,7 @@ footer {
     font-size: 1.4rem;
   }
   .section-features-tabs-container {
-    gap: unset;
+    gap: 6rem;
   }
   .features-tab {
     flex-direction: column;
@@ -758,6 +760,7 @@ footer {
   .features-tabs-wrapper::before {
     height: 15rem;
     width: 80vw;
+    bottom: 25%;
   }
   .features-tab-content {
     width: 100%;
@@ -767,6 +770,9 @@ footer {
   }
   .primary-button {
     display: none;
+  }
+  .section-download-extension {
+    gap: 6rem;
   }
   .section-download-extension-cards-container {
     flex-direction: column;
@@ -787,26 +793,44 @@ footer {
   .faq-accordions-container {
     width: 80%;
   }
+  .faq-accordion-button {
+    padding: 2rem;
+    padding-left: 0;
+  }
   .faq-accordion-content {
     text-align: start;
   }
   .section-contact > h2 {
     max-width: 80%;
   }
+  .section-contact > p {
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+  }
   .contact-us-container {
     flex-direction: column;
   }
+  .contact-us-container {
+    width: 80%;
+  }
+  .contact-us-container > .email-input-wrapper,
   .contact-us-container > .email-input-wrapper > .input-wrapper > input,
   .contact-us-container > .secondary-button {
     width: 100%;
+  }
+  .contact-us-container > .email-input-wrapper > .input-wrapper > input {
+    height: 3.6rem;
+  }
+  .contact-us-container > .email-input-wrapper > p {
+    font-size: 1rem;
   }
   footer,
   .logo-nav-links-container,
   .nav-links-container {
     flex-direction: column;
   }
-  .nav-links-container {
-    gap: 0;
+  .logo-nav-links-container .nav-link {
+    font-size: 1.2rem;
   }
   .social-media-links-container {
     margin-top: 3rem;
