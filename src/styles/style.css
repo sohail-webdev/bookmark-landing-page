@@ -634,6 +634,9 @@ footer {
   .features-tab-switcher-button {
     width: 100%;
   }
+  .features-tab-switcher-button-text {
+    font-size: 1.4rem;
+  }
   .section-features-tabs-container {
     gap: unset;
   }
