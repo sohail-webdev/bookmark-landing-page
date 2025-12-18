@@ -622,7 +622,7 @@ footer {
 .mobile-navbar-content-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
 }
 .mobile-navbar-container .nav-links-cta-container-mobile {
   font-size: 1.8rem;
@@ -635,6 +635,7 @@ footer {
   background-color: transparent;
   border-color: #ffffff;
   border-width: 0.2rem;
+  font-size: 1.8rem;
 }
 .mobile-navbar-container .nav-link {
   width: 100%;
@@ -642,6 +643,7 @@ footer {
   padding: 2rem 0;
   border: 0.15rem solid transparent;
   border-bottom-color: rgba(255, 255, 255, 0.2);
+  font-size: 1.8rem;
 }
 .mobile-navbar-container .nav-link:first-child {
   border-top-color: rgba(255, 255, 255, 0.2);
