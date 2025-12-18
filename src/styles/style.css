@@ -70,6 +70,7 @@ h2 {
 .section-header > p {
   max-width: 35%;
   text-align: center;
+  line-height: 1.4rem;
 }
 a {
   cursor: pointer;
@@ -267,6 +268,7 @@ a {
 }
 .features-tab-content > p {
   max-width: 90%;
+  line-height: 1.4rem;
 }
 .features-tab-content > .button {
   padding: var(--button-padding);
@@ -295,8 +297,8 @@ a {
   padding-right: var(--x-padding);
 }
 .extension-card {
-  width: fit-content;
   height: 24rem;
+  width: 18rem;
   box-shadow: var(--primary-box-shadow);
   display: flex;
   flex-direction: column;
@@ -319,7 +321,6 @@ a {
 }
 .extension-card > .primary-cta-button {
   width: 80%;
-  white-space: nowrap;
 }
 .extension-card > .extension-card-cta-text {
   font-weight: bold;
@@ -402,6 +403,7 @@ a {
   align-items: center;
   gap: 2rem;
   color: #ffffff;
+  margin-top: var(--y-section-padding);
 }
 .section-contact > p {
   opacity: 1;
