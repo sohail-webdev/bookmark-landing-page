@@ -684,4 +684,22 @@ footer {
   .faq-accordion-content {
     text-align: start;
   }
+  .section-contact > h2 {
+    max-width: 80%;
+  }
+  .contact-us-container {
+    flex-direction: column;
+  }
+  .contact-us-container > .email-input-wrapper > .input-wrapper > input,
+  .contact-us-container > .secondary-button {
+    width: 100%;
+  }
+  footer,
+  .logo-nav-links-container,
+  .nav-links-container {
+    flex-direction: column;
+  }
+  .social-media-links-container {
+    margin-top: 3rem;
+  }
 }
