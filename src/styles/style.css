@@ -536,7 +536,7 @@ footer {
 @media (pointer: fine) {
   .nav-link:hover,
   .features-tab-switcher-button:hover,
-  .faq-accordion-button-text:hover {
+  .faq-accordion-button:hover > .faq-accordion-button-text {
     color: var(--color-primary-2);
   }
   .login-button:hover,
@@ -566,7 +566,7 @@ footer {
 
 .nav-link:active,
 .features-tab-switcher-button:active,
-.faq-accordion-button-text:active {
+.faq-accordion-button:active > .faq-accordion-button-text {
   color: var(--color-primary-2);
 }
 .login-button:active,
