@@ -413,6 +413,9 @@ a {
 }
 .contact-us-container > .email-input-wrapper > p {
   opacity: 0;
+  font-size: 0.9rem;
+  align-self: flex-start;
+  padding: 0.2rem;
 }
 .contact-us-container > .email-input-wrapper:has(.text-input.invalid) {
   background-color: var(--color-primary-2);
@@ -434,6 +437,7 @@ a {
   padding-left: 1rem;
   padding-right: 2.2rem;
   height: 2.4rem;
+  font-size: 1rem;
 }
 .contact-us-container > .email-input-wrapper > .input-wrapper > input::placeholder {
   color: var(--color-neutral-2);
