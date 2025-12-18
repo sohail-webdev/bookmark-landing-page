@@ -1,7 +1,7 @@
 import bookmark_logo from "../assets/logo-bookmark.svg";
 import hanburger_icon from "../assets/icon-hamburger.svg";
 
-export default function Header() {
+export default function Header({ toggle_mobile_navbar_visibility }) {
   return (
     <header className="header">
       <img src={bookmark_logo} alt="bookmark logo" />
@@ -21,7 +21,7 @@ export default function Header() {
         </nav>
         <button className="button login-button secondary-button">Login</button>
       </div>
-      <button className="button toggle-navbar-button">
+      <button className="button toggle-navbar-button" onClick={toggle_mobile_navbar_visibility}>
         <img src={hanburger_icon} alt="" />
       </button>
     </header>

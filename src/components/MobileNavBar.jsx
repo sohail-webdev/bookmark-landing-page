@@ -1,13 +1,13 @@
 import bookmark_logo_white from "../assets/logo-bookmark-white-logo-and-text.svg";
 import close_icon from "../assets/icon-close.svg";
 
-export default function MobileNavBar() {
+export default function MobileNavBar({ isMobileNavbarVisible, toggle_mobile_navbar_visibility }) {
   return (
-    <div className="mobile-navbar-container">
+    <div className={`mobile-navbar-container${isMobileNavbarVisible ? " visible" : ""}`}>
       <div className="mobile-navbar-content-container">
         <div className="mobile-navbar-logo-close-button-wrapper">
           <img src={bookmark_logo_white} alt="" />
-          <button className="button close-navbar-button">
+          <button className="button close-navbar-button" onClick={toggle_mobile_navbar_visibility}>
             <img src={close_icon} alt="" />
           </button>
         </div>
